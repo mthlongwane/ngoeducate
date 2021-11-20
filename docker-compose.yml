@@ -1,0 +1,45 @@
+version: '3.1'
+
+services:
+  #  frontend:
+  #    build:
+  #      context: ./frontend
+  #      dockerfile: $PWD/frontend/docker/Dockerfile
+  #    ports:
+  #      - 3000:3000
+  #
+  backend:
+    build:
+      context: ./server
+      dockerfile: $PWD/server/docker/Dockerfile
+    env_file: ./server/.env
+    ports: 
+      - 4000:4000
+    volumes:
+      - ./server/:/src
+    depends_on: 
+      - db
+  
+  apkbuilder:
+    build:
+      context: ./apk-builder
+    ports:
+      - 5000:5000
+  
+  db:
+    build:
+      context: ./docker/postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_HOST_AUTH_METHOD: trust
+      DB_EXTENSION: uuid-ossp
+    env_file: ./server/.env
+    ports:
+      - 8200:5432
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8201:8080

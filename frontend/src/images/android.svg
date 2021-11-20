@@ -1,0 +1,19 @@
+<svg width="350" height="715.9" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
+ <title>android</title>
+ <defs>
+  <filter id="svg_42_blur">
+   <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <g filter="url(#svg_42_blur)" id="svg_42">
+   <rect id="svg_31" fill="#535461" height="99" width="7" y="110.16219" x="16.68387"/>
+   <rect id="svg_32" fill="#535461" height="56" width="7" y="243.16219" x="16.68387"/>
+   <rect id="svg_33" fill="#535461" ry="47.1" rx="47.1" height="684" width="315" y="14.21483" x="21.68387"/>
+   <rect stroke="null" id="svg_34" fill="#f7f7f7" ry="47.1" rx="47.1" height="623" width="303.42091" y="46.21483" x="27.94709"/>
+   <rect id="svg_35" fill="#eaeaf3" ry="3.5" rx="3.5" height="7" width="52" y="28.16219" x="153.68387"/>
+   <circle id="svg_36" fill="#eaeaf3" r="5" cy="32.16219" cx="223.68387"/>
+  </g>
+ </g>
+</svg>

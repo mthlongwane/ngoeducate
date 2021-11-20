@@ -1,0 +1,87 @@
+# OSX
+.DS_Store
+appSource/.DS_Store
+
+# Xcode
+#
+appSource/build/
+appSource/*.pbxuser
+appSource/!default.pbxuser
+appSource/*.mode1v3
+appSource/!default.mode1v3
+appSource/*.mode2v3
+appSource/!default.mode2v3
+appSource/*.perspectivev3
+appSource/!default.perspectivev3
+appSource/xcuserdata
+appSource/*.xccheckout
+appSource/*.moved-aside
+appSource/DerivedData
+appSource/*.hmap
+appSource/*.ipa
+appSource/*.xcuserstate
+
+# Android/IntelliJ
+#
+appSource/build/
+appSource/.idea
+appSource/.gradle
+appSource/local.properties
+appSource/*.iml
+
+# node.js
+#
+appSource/node_modules/
+appSource/npm-debug.log
+appSource/yarn-error.log
+
+# BUCK
+appSource/buck-out/
+appSource/\.buckd/
+appSource/*.keystore
+appSource/!debug.keystore
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+appSource/*/fastlane/report.xml
+appSource/*/fastlane/Preview.html
+appSource/*/fastlane/screenshots
+appSource/package-lock.json
+
+# Bundle artifact
+appSource/*.jsbundle
+
+# CocoaPods
+appSource/ios/Pods/
+appSource/ios/Pods
+
+# node.js
+#
+.env
+node_modules/
+npm-debug.log
+yarn-error.log
+
+builds/
+audio/
+video/
+
+appSource/node_modules/
+appSource/.expo/
+appSource/npm-debug.*
+appSource/*.jks
+appSource/*.p8
+appSource/*.p12
+appSource/*.key
+appSource/*.mobileprovision
+appSource/*.orig.*
+appSource/web-build/
+
+appSource/assets/audio/*
+appSource/assets/video/*
+appSource/assets/image/*
